@@ -3,70 +3,113 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Atelier HTML</title>
-  <meta name="description" content="Atelier sur la structure HTML d'une page">
+  <title>TERRE DE GEEK</title>
+  <meta name="description" content="vente de produits électroniques (téléphonie,
+  informatique, produits dérivés etc.) Evreux - Dieppe - Forge les eaux - Louviers - Alençon">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+ 
+  <link rel="stylesheet" href="css/hamburger.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+
+
+    <!-- Font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/d35a4afa88.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
+ 
 
 <!-- ########## HEADER ############-->
   <header>
     <section>
-      <h1>Atelier HTML</h1>
-      <p>Tout comprendre sur le HTML et le CSS</p>
+      <h1>TERRE DE GEEK</h1>
+      <p>Vente de produits électroniques</p>
     </section>
-
-    <div>
-      <a href="#">Lien 1</a>
-      <a href="#">Lien 2</a>
-    </div>
   </header>
+  
 
 <!-- ########## NAV ############-->
-<nav>
-  <ul>
-    <li><a href="#">Entreprise</a></li>
-    <li><a href="#">Informations</a></li>
-    <li><a href="#">Reclamation</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-  <aside>
-    <input type="text">
-    <button>Rechercher</button>
-  </aside>
-</nav>
+  <nav>
+    <div class="active">
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="#">Qui sommes-nous ?</a>
+      <a href="#">Nos points de vente</a>
+      <a href="#">Nous contacter</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  </nav>
 
 
 
-<div class="container">
+
+
   <!-- ########## MAIN ############-->
 
-  <main>CONTENU PRINCIPAL DU SITE</main>
+  <main>
 
-  <!-- ########## ASIDE ############-->
-  <aside>
-    <ul>
-      <li><a href="#">item 1</a></li>
-      <li><a href="#">item 2</a></li>
-      <li><a href="#">item 3</a></li>
-      <li><a href="#">item 4</a></li>
-      <li><a href="#">item 5</a></li>
-      <li><a href="#">item 6</a></li>
+    <section class="products_list">
+      
+      <section>
+        <a href="product.html"><article class="product">
+          <img class="product_image" src="img/electronics01.jpg" alt="">
+          <div class="product_detail"><h3>composants</h3>
+          <p class="product_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Etiam a nulla lorem. Nullam a ultrices mi.</p>
+          </div>
+          <div class="product_price"> <p>29 €</p>
+          </div>
+        </article>
+      </a>
+      </section>
 
-    </ul>
-  </aside>
+      <section>
+        <a href="product.html"><article class="product">
+          <img class="product_image" src="img/electronics01.jpg" alt="">
+          <div class="product_detail"><h3>Domotique</h3>
+          <p class="product_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Etiam a nulla lorem. Nullam a ultrices mi.</p>
+          </div>
+          <div class="product_price"> <p>59 €</p>
+          </div>
+        </article>
+      </a>
+      </section>
 
-</div>
+      <section>
+        <a href="product.html"><article class="product">
+          <img class="product_image" src="img/electronics01.jpg" alt="">
+          <div class="product_detail"><h3>Informatique</h3>
+          <p class="product_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Etiam a nulla lorem. Nullam a ultrices mi.</p>
+          </div>
+          <div class="product_price"> <p>79 €</p>
+          </div>
+        </article>
+      </a>
+      </section>
+    
+    </section>    
+  </main>
 
 
 
@@ -74,7 +117,7 @@
 
 <footer>
   <section>
-    <h4>FOOTER</h4>
+    <h4>MENTIONS LÉGALES</h4>
     <div>
     <a href="#">Facebook</a>
     <a href="#">Twitter</a>

@@ -86,9 +86,37 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+   @font-face {
+    font-family: 'sega_logo_fontregular';
+    src: url(/atelier_html/fonts/sega-webfont.woff2) format('woff2'),
+         url(/atelier_html/fonts/sega-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+  body {
+    background-color: #141414;;
+  }
+  p, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  header p {
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+   header h1 {
+     font-family: "sega_logo_fontregular", Arial, Helvetica, sans-serif;
+     color: #DE2E2E;
+     font-size: 40px;
+     font-weight: lighter;
+   }
+
 header {
-  background-color: red;
-  height: 33vh;
+  background-color: #141414;
+  height: 35vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,51 +124,75 @@ header {
 }
 
 header>section {
-  background-color: green;
-  width: 40%;
+  margin-top: 15px;
+  background-color: #141414;
   text-align: center;
 }
 
-header>div {
-  background-color: lightblue;
-  position: absolute;
-  width: 10%;
-  top: 10px;
-  right: 10px;
-  text-align: center;
-}
 
-header>div>a {
-  margin: 0 1em;
-}
-
-nav {
-  background-color: yellow;
-}
-
-nav>ul {
-  list-style: none;
-}
-
-.container {
+.products_list {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  width: 80%;
-  background-color: brown;
-  margin: 4em auto;
-  height: 50vh;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+  /* background-color: #EDCF02; */
+  background-color: #141414;
+  margin: 20px 0px 0px 0px;
 }
 
-.container main {
-  background-color : pink;
-  width: 66%;
-  padding: 2%;
+
+.products_list a {
+  text-decoration: none;
 }
 
-.container aside {
- background-color: aqua;
- width: 30%;
+.product {
+  background-color: #EDCF02;
+  margin-top: 20px;
+  max-width: 375px;
 }
+
+.product img {
+  max-width: 375px;
+}
+
+.product_detail {
+margin: 10px;
+}
+
+.product h3 {
+  font-family: 'Open Sans', sans-serif;  text-align: center;
+  margin-bottom: 5px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.product_description {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.product p {
+  font-size: 14px;
+  color: black;
+}
+
+.product_price {
+  max-width: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product_price p {
+text-align: center;
+color: #DE2E2E;
+background-color: black;
+font-size: 20px;
+font-weight: bold;
+}
+
 
 /* ==========================================================================
    Helper classes
