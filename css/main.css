@@ -97,6 +97,8 @@ textarea {
     font-style: normal;
 }
 
+
+
   body {
     background-color: #141414;;
   }
@@ -164,6 +166,7 @@ header a {
 .product {
   background-color: #EDCF02;
   margin-top: 20px;
+  margin-bottom: 25px;
   max-width: 375px;
 }
 
