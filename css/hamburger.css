@@ -18,7 +18,7 @@ nav {
       color: #DE2E2E;
       opacity: 0.8;
       transition: opacity 0.5s;
-      transition: transform 20s;
+      transition: transform 20s linear;
 }
 
 i.fa.fa-bars:hover {

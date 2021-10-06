@@ -116,7 +116,7 @@ a {
 }
 
 
-  p, h2, h3, h4, h5, h6 {
+  p, h2, h3, h4, h5, h6, ul, li {
     font-family: 'Roboto', sans-serif;
   }
 
@@ -153,6 +153,31 @@ header>section {
   margin-top: 15px;
   width: 100%;
   text-align: center;
+}
+
+
+.nav_desktop {
+  color: white;
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+
+  /* display:none; */
+}
+
+.nav_desktop ul {
+  position: relative;
+  display: flex;
+}
+
+.nav_desktop li {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  padding-left: 11px;
+  padding-right: 11px;
 }
 
 
@@ -265,6 +290,16 @@ footer p {
 
   /* DESKTOP */
   @media screen and (min-width: 1024px) {
+    .nav_desktop {
+      display: flex;
+    }
+   
+    .hamburger {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      z-index: 1000;
+    }
     .product {
       max-width: 30%;
   }
