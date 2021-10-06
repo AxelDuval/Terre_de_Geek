@@ -31,33 +31,34 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body class="background_black">
  
 
-<!-- ########## HEADER ############-->
-  <header>
-    <section>
-      <a href="index.html"><h1>TERRE DE GEEK</h1></a>
-      <p>Vente de produits électroniques</p>
-    </section>
-  </header>
+  <!-- ########## HEADER ############-->
+    <header class="background_black">
+      <section class="background_black">
+        <a href="index.html"><h1>TERRE DE GEEK</h1></a>
+        <p>Vente de produits électroniques</p>
+      </section>
+    </header>
+    
   
-
-<!-- ########## NAV ############-->
-  <nav>
-    <div class="active">
-    <!-- Navigation links (hidden by default) -->
-    <div id="myLinks">
-      <a href="company.html">Qui sommes-nous ?</a>
-      <a href="#">Nos points de vente</a>
-      <a href="#">Nous contacter</a>
+  <!-- ########## NAV ############-->
+    <nav>
+      <div class="active">
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="company.html">Qui sommes-nous ?</a>
+        <a href="#">Nos points de vente</a>
+        <a href="#">Nous contacter</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-    <a href="javascript:void(0);" class="icon" onclick="openMenu()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-  </nav>
+    </nav>
+  
 
 
 
@@ -66,25 +67,21 @@
   <!-- ########## MAIN ############-->
 
   <main>
-          <!-- Button to back on index -->
-    <div class="back background_red"><a href="index.html">Retour</a></div>
 
     <div class="product_single background_black">
       
-      <div>
         <article class="product">
            
           <img class="product_image" src="img/electronics01.jpg" alt="Une image d'illustration">
-          <div class="product_price"> <p>29 €</p>
-          </div>
+
           <div class="product_detail"><h3>composants</h3>
+            <hr>
           <p class="product_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Etiam a nulla lorem. Nullam a ultrices mi. Fusce fermentum auctor euismod. Phasellus blandit dui lorem, 
           vitae commodo leo vehicula vitae. Maecenas finibus condimentum diam, ut ultricies elit ullamcorper a. 
           Morbi efficitur sapien id massa tincidunt malesuada. Sed id dolor eget lorem commodo aliquet a accumsan nulla. 
           Proin sit amet vulputate sapien. Aenean ut eros finibus, auctor dui eget, facilisis velit. In a mauris vitae quam euismod auctor. 
           Donec eu sodales nibh, a dictum tellus.</p>
- 
           </div>
           <section class="product_features background_red">
             <h4>Features</h4>
@@ -92,17 +89,18 @@
                 <li>Sed id dolor eget lorem commodo aliquet</li>
                 <li>Sed id dolor eget lorem commodo aliquet</li>
                 <li>Sed id dolor eget lorem commodo aliquet</li>
-                <li>Sed id dolor eget lorem commodo aliquet</li>
-                <li>Sed id dolor eget lorem commodo aliquet</li>
-                <li>Sed id dolor eget lorem commodo aliquet </li>
             </ul> 
-        </section>  
+        </section>
+        <div class="product_price marginTB10"> <p>29 €</p>
+        </div>  
         </article>
+         <!-- Button to back on index -->
 
-    </div>
 
 </div>    
   </main>
+  <div class="back background_red"><a href="index.html">Retour</a></div>
+
 
 
 

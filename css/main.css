@@ -45,7 +45,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 2px solid #ccc;
   margin: 1em 0;
   padding: 0;
 }
@@ -118,6 +118,11 @@ a {
 
   p, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
+  }
+
+  .marginTB10 {
+    margin-top : 10px;
+    margin-bottom: 10px;
   }
 
 /* ==========================================================================
@@ -194,13 +199,13 @@ hr {
     height: 1px;
     border: 0;
     border-top: 2px solid #DE2E2E;
-    margin: 0.5em auto;
+    margin: 0.5em auto 1em auto;
     padding: 0;
     width: 50%;
 }
 .product_description {
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .product p {
@@ -258,6 +263,7 @@ footer p {
     .product {
       max-width: 30%;
   }
+}
 
 
 
@@ -275,8 +281,12 @@ footer p {
   margin: 20px 0px 0px 0px;
 }
 
+.product_single>.product {
+  max-width: 80%;
+}
 
-main .back {
+
+.back {
   margin-left: auto;
   margin-right: auto;
   padding: 5px 5px 5px 8px;
@@ -292,11 +302,6 @@ main .back {
 
 }
 
-.product_description {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
 .product_features {
   padding: 10px;
 }
@@ -309,6 +314,7 @@ main .back {
 
 .product_features ul {
   padding-bottom: 10px;
+  text-align: center;
 }
 
 .product_features li {
