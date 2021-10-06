@@ -295,6 +295,11 @@ footer p {
 
  /* TABLETTE */
  @media screen and (min-width: 480px) {
+  
+  header h1 {
+    font-size: 40px;
+  }
+  
   .products_list {
     margin-left: 5%;
     margin-right: 5%;
@@ -307,6 +312,9 @@ footer p {
 
   /* DESKTOP */
   @media screen and (min-width: 1024px) {
+    header h1 {
+      font-size: 45px;
+    }
     .nav_desktop {
       display: flex;
     }
@@ -411,6 +419,8 @@ footer p {
   font-size: 14px;
   color: black;
 }
+
+
 
 
 /* ==========================================================================
