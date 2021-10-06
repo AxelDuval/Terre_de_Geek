@@ -14,7 +14,7 @@ nav {
   
 
   i.fa.fa-bars {
-      font-size: 25px;
+      font-size: 45px;
       color: #DE2E2E;
 }
 
@@ -35,7 +35,5 @@ nav {
   .active {
     background-color: #141414;
     color: white;
-    border-bottom: 2px solid #EDCF02;
-    border-top: 2px solid #EDCF02;
 
   }
