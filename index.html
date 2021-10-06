@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="css/hamburger.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/all.css">
+
 
 
     <!-- Font link -->
@@ -31,12 +33,12 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body class="background_black">
  
 
 <!-- ########## HEADER ############-->
-  <header>
-    <section>
+  <header class="background_black">
+    <section class="background_black">
       <h1>TERRE DE GEEK</h1>
       <p>Vente de produits électroniques</p>
     </section>
@@ -68,48 +70,57 @@
   <main>
 
         <!-- List of the products -->
-    <div class="products_list">
+    <div class="products_list background_black">
       
-      <div>
-        <a href="product.html"><article class="product">
-          <img class="product_image" src="img/electronics01.jpg" alt="Une image d'illustration">
-          <div class="product_detail"><h3>composants</h3>
+        
+          <article class="product">
+            <a href="product.html">
+            <figure>
+            <img class="product_image" src="img/electronics01.jpg" alt="Une image d'illustration">
+          </figure>
+          <div class="product_detail">
+            <h3>composants</h3>
           <p class="product_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Etiam a nulla lorem. Nullam a ultrices mi.</p>
           </div>
-          <div class="product_price"> <p>29 €</p>
+          <div class="product_price">
+            <p>29 €</p>
+          </a>
           </div>
         </article>
-      </a>
-    </div>
+      
 
-      <div>
-        <a href="product.html"><article class="product">
-          <img class="product_image" src="img/electronics02.jpg" alt="Une image d'illustration">
+        
+          <article class="product">
+            <a href="product.html"></a>
+            <figure>
+              <img class="product_image" src="img/electronics02.jpg" alt="Une image d'illustration">
+          </figure>
           <div class="product_detail"><h3>Domotique</h3>
           <p class="product_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Etiam a nulla lorem. Nullam a ultrices mi.</p>
           </div>
           <div class="product_price"> <p>59 €</p>
+          </a>
           </div>
         </article>
-      </a>
-    </div>
+      
 
-      <div>
-        <a href="product.html"><article class="product">
-          <img class="product_image" src="img/electronics04.jpg" alt="Une image d'illustration">
+       
+          <article class="product">
+            <a href="product.html">
+            <figure>
+             <img class="product_image" src="img/electronics03.jpg" alt="Une image d'illustration">
+            </figure>
           <div class="product_detail"><h3>Informatique</h3>
           <p class="product_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Etiam a nulla lorem. Nullam a ultrices mi.</p>
           </div>
           <div class="product_price"> <p>79 €</p>
-          </div>
+          </a></div>
         </article>
-      </a>
     </div>
     
-  </div>    
   </main>
 
 
