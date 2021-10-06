@@ -170,6 +170,7 @@ header>section {
 .nav_desktop ul {
   position: relative;
   display: flex;
+  margin-bottom: 2em;
 }
 
 .nav_desktop li {
@@ -178,6 +179,15 @@ header>section {
   align-items: stretch;
   padding-left: 11px;
   padding-right: 11px;
+  /* max-height: 200px; */
+}
+
+.nav_desktop a {
+  padding-bottom: 10px;
+}
+
+.nav_desktop li:hover {
+ border-bottom: 1.5px solid #DE2E2E;
 }
 
 
