@@ -16,6 +16,12 @@ nav {
   i.fa.fa-bars {
       font-size: 45px;
       color: #DE2E2E;
+      opacity: 0.8;
+}
+
+i.fa.fa-bars:hover {
+  color: #DE2E2E;
+  opacity: 1;
 }
 
   /* Style navigation menu links */
