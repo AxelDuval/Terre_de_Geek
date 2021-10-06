@@ -283,6 +283,9 @@ footer p {
   align-content: flex-start;
   align-items: flex-start;
   margin: 20px 0px 0px 0px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .product_single>.product {
