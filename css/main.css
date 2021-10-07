@@ -279,12 +279,13 @@ font-weight: bold;
    ========================================================================== */
 
 footer {
-  height: 15vh;
+  height: 10vh;
   background-color: #DE2E2E;
   color: #141414;
   text-align: center;
   padding-top: 5px;
   margin-top: 20px;
+  width: 100%;
 }
 
 footer p {
@@ -325,6 +326,11 @@ footer p {
       right: 15px;
       z-index: 1000;
     }
+
+    i.fa.fa-bars {
+      font-size: 30px;
+    }
+
     .product {
       max-width: 30%;
   }
@@ -420,6 +426,15 @@ footer p {
   color: black;
 }
 
+.company iframe {
+  width: 100%;
+  border: none;
+}
+
+
+/* ==========================================================================
+   PRESTATIONS
+   ========================================================================== */
 
 
 
